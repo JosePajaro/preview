@@ -7,22 +7,22 @@ const Page: React.FC = () => {
   return (
     <div className="flex flex-col h-screen font-[jazmin]">
       {/* Parte superior (40% de la altura) */}
-      <div className="bg-verde1-custom h-[40%] relative text-white p-6 bg-fixed">
+      <div className="bg-verde1-custom h-[50%] relative text-white p-6 bg-fixed">
         <div className="text-center">
           <h1 className="text-3xl font-bold">PAQUETES DE SERVICIOS</h1>
           <HeaderPrincipal />
         </div>
-        <div className='pt-8'>
-          <h2 className='font-bold'>Planes empresariales</h2>
-          <p className='w-64 text-[12px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor sit amet consectetur adipisicing elit. Sapiente quos ea eligendi reiciendis, quod inventore laudantium vitae dolores.</p>
+        <div className='pt-12 grid grid-cols-6 gap-4 auto-cols-max'>
+          <h2 className='font-bold col-start-2 w-64'>Planes empresariales</h2>
+          <p className='w-64 text-[12px] col-start-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor sit amet consectetur adipisicing elit. Sapiente quos ea eligendi reiciendis, quod inventore laudantium vitae dolores. </p>
         </div>
 
-        <img src="/assets/images/orquidea.png" alt="Imagen" className="absolute bottom-0 right-0 w-48 h-9/10" />
+        <img src="/assets/images/orquidea.png" alt="Imagen" className="pt-8 absolute bottom-0 right-0 w-60 h-full max-h-64" />
 
       </div>
 
       {/* Parte inferior (60% de la altura) */}
-      <div className="bg-white h-[60%] justify-items-center">
+      <div className="bg-white h-[50%] justify-items-center">
         <div className='pt-4'>
           <SearchAndFilter />
         </div>
