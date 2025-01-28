@@ -11,9 +11,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ time, title, price, description, buttonText }) => {
   return (
-    <div className="max-w-sm rounded-lg text-azul-custom shadow-md hover:text-white hover:bg-gradient-to-t from-verde3-custom from-30% to-verde2-custom to-70%">
-        {/**/}
-      
+    <div className="transform transition-all duration-300 ease-in-out hover:scale-105 size-40 h-64 rounded-sm text-azul-custom shadow-lg hover:text-white hover:bg-gradient-to-t from-verde3-custom from-10% to-verde2-custom to-90%">
       <div className="p-4 ">
         {/*tiempo del servicio*/}
         <p className="text-azul-custom/50 text-xl font-bold ">{time}</p>
@@ -30,7 +28,7 @@ const Card: React.FC<CardProps> = ({ time, title, price, description, buttonText
 
         {/* Botón de acción */}
         <button
-          className="mt-4 px-4 py-2 bg-white text-azul-custom hover:bg-verde2-custom hover:text-white transition-all duration-300"
+          className="m-2 rounded-sm mt-6 px-4 py-2 bg-white text-azul-custom hover:bg-verde2-custom hover:text-white transition-all duration-300"
         >
           {buttonText}
         </button>

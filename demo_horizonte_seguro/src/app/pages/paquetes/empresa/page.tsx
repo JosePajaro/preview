@@ -22,55 +22,59 @@ const Page: React.FC = () => {
       </div>
 
       {/* Parte inferior (60% de la altura) */}
-      <div className="bg-white h-[60%] p-6">
-        <SearchAndFilter />
-        <div className='pt-4 flex justify-between'>
-          <h3 className='font-bold'>Más populares</h3>
-          <a href="#">ver todos</a>
+      <div className="bg-white h-[60%] justify-items-center">
+        <div className='pt-4'>
+          <SearchAndFilter />
         </div>
-        <div className="justify-items-stretch items-center p-6 grid grid-cols-3 gap-3 ">
-          <Card
-            time="6 meses"
-            price={600}
-            title="ESTANDAR"
-            description="Esta es una descripción corta de la tarjeta, con algo de información importante."
-            buttonText="Comprarla"
-          />
-          <Card
-            time="12 meses"
-            price={1000}
-            title="CONFORT"
-            description="Esta es una descripción corta de la tarjeta, con algo de información importante."
-            buttonText="Comprarla"
-          />
-          <Card
-            time="2 años"
-            price={2000}
-            title="PREMIUM"
-            description="Esta es una descripción corta de la tarjeta, con algo de información importante."
-            buttonText="Comprarla"
-          />
-          <Card
-            time="6 meses"
-            price={600}
-            title="ESTANDAR"
-            description="Esta es una descripción corta de la tarjeta, con algo de información importante."
-            buttonText="Comprarla"
-          />
-          <Card
-            time="12 meses"
-            price={1000}
-            title="CONFORT"
-            description="Esta es una descripción corta de la tarjeta, con algo de información importante."
-            buttonText="Comprarla"
-          />
-          <Card
-            time="2 años"
-            price={2000}
-            title="PREMIUM"
-            description="Esta es una descripción corta de la tarjeta, con algo de información importante."
-            buttonText="Comprarla"
-          />
+        <div className="p-6">
+          <div className='grid grid-cols-2'>
+            <h3 className='col-start-1 col-end-3 font-bold'>Más populares</h3>
+            <a className='col-end-7' href="#">ver todos</a>
+          </div>
+          <div className='pt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 '>
+            <Card
+              time="6 meses"
+              price={600}
+              title="ESTANDAR"
+              description="Esta es una descripción corta de la tarjeta, con algo de información importante."
+              buttonText="ADQUIRIR"
+            />
+            <Card
+              time="12 meses"
+              price={1000}
+              title="CONFORT"
+              description="Esta es una descripción corta de la tarjeta, con algo de información importante."
+              buttonText="ADQUIRIR"
+            />
+            <Card
+              time="2 años"
+              price={2000}
+              title="PREMIUM"
+              description="Esta es una descripción corta de la tarjeta, con algo de información importante."
+              buttonText="ADQUIRIR"
+            />
+            <Card
+              time="6 meses"
+              price={600}
+              title="ESTANDAR"
+              description="Esta es una descripción corta de la tarjeta, con algo de información importante."
+              buttonText="ADQUIRIR"
+            />
+            <Card
+              time="12 meses"
+              price={1000}
+              title="CONFORT"
+              description="Esta es una descripción corta de la tarjeta, con algo de información importante."
+              buttonText="ADQUIRIR"
+            />
+            <Card
+              time="2 años"
+              price={2000}
+              title="PREMIUM"
+              description="Esta es una descripción corta de la tarjeta, con algo de información importante."
+              buttonText="ADQUIRIR"
+            />
+          </div>
         </div>
       </div>
     </div>

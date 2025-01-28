@@ -16,6 +16,7 @@ export default {
         'verde2-custom': '#7FCEB8',
         'verde3-custom': '#138583',
       },
+      
     },
   },
   plugins: [],
